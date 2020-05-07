@@ -1,0 +1,74 @@
+Index: app/src/main/res/layout/chat_bluetooth.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/chat_bluetooth.xml	(revision )
++++ app/src/main/res/layout/chat_bluetooth.xml	(revision )
+@@ -0,0 +1,50 @@
++<?xml version="1.0" encoding="utf-8"?>
++<android.support.constraint.ConstraintLayout
++    xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent">
++
++    <ListView
++        android:id="@+id/lvSend"
++        android:layout_width="match_parent"
++        android:layout_height="453dp"
++        android:background="@android:color/holo_blue_light"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent">
++
++    </ListView>
++
++    <EditText
++        android:id="@+id/etSend"
++        android:layout_width="261dp"
++        android:layout_height="wrap_content"
++        android:layout_marginBottom="16dp"
++        android:layout_marginStart="16dp"
++        android:layout_marginTop="50dp"
++        android:inputType=""
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toBottomOf="@+id/lvSend"
++        app:layout_constraintVertical_bias="0.777"
++        tools:ignore="LabelFor" />
++
++    <Button
++        android:id="@+id/btnSend"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_marginBottom="16dp"
++        android:layout_marginEnd="16dp"
++        android:layout_marginTop="47dp"
++        android:background="@android:drawable/ic_menu_send"
++        android:backgroundTint="@android:color/holo_blue_bright"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="1.0"
++        app:layout_constraintStart_toEndOf="@+id/etSend"
++        app:layout_constraintTop_toBottomOf="@+id/lvSend"
++        app:layout_constraintVertical_bias="0.735" />
++
++</android.support.constraint.ConstraintLayout>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/vcs.xml	(revision )
++++ .idea/vcs.xml	(revision )
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
